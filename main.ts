@@ -4,6 +4,11 @@
 /**
  * the numbers on the right side of each of these needs to be the same as the slot or connector number on the micro-bit motor board.
  */
+input.onButtonPressed(Button.A, function () {
+    while (!(input.buttonIsPressed(Button.B))) {
+        Check_Keyboard(1)
+    }
+})
 // There are 12 keys on this 12 keys on this keypad.. We need numbers for the '*' key and the '#' key.
 // '*'  will be 10
 // '#'  will be 12
